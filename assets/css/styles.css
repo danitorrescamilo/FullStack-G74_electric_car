@@ -147,7 +147,6 @@ body{
     gap:10px;
 }
 
-
 .footer__box i{
     margin-right: 10px;
 }
@@ -166,7 +165,34 @@ body{
     color: white;
 }
 
+.bullet__box{
+    /* background-color: yellow; */
+    padding: 30px 10px;
+}
 
+.bullet__box ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    gap: 10px;
+}
+
+.bullet__box ul a{
+    text-decoration: none;
+    color: #11589c;
+}
+
+.bullet__box ul a:hover{
+    background-color: #11589c;
+    color: white;
+}
+
+.bullet__box ul li{
+    border: 1px solid grey;
+    padding: 10px;
+}
+    
 
 /* Sobre los 576 pixeles */
 @media (min-width:576px) {
@@ -197,6 +223,7 @@ body{
     .sidebar__box{
         display: flex;
         flex-direction: column;
+        margin-top: 10px;
         /* outline: 1px solid white; */
     }
 
@@ -234,8 +261,8 @@ body{
 
     .sidebar__footer{
         display: flex;
-        align-items: center;
         justify-content: center;
+        align-content: flex-end;
         width: 100%;
         background-color: #063070;
         padding: 10px 0;
@@ -253,6 +280,7 @@ body{
 
     .sidebar__copyright{
         display: flex;
+        align-content: flex-end;
         background-color:#063070;
         padding: 10px;
     }
